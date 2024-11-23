@@ -1,11 +1,11 @@
 import React from 'react'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Nav = () => {
     return (
         <nav className="flex items-center justify-between bg-black text-white px-10 py-4">
-            <h1 className="text-2xl font-bold font-mono">MovieApp</h1>
+            <Link to={"/"} className="text-2xl font-bold font-mono">MovieApp</Link>
             <div className="flex items-center space-x-3">
                 <NavLink to={"/"} className="text-xl font-medium">Popular</NavLink>
                 <NavLink to={"/upcoming"} className="text-xl font-medium">Upcoming</NavLink>

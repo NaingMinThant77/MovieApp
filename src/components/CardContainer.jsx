@@ -11,7 +11,7 @@ const CardContainer = ({ title, url }) => {
         const response = await fetch(url);
         const data = await response.json();
         setPopularMovies(data.results);
-        console.log(data.results)
+        // console.log(data.results)
     }
 
     return (
